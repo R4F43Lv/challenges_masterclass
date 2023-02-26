@@ -12,12 +12,10 @@ void main() {
   }
 }
 
-fibonacci(int n){
-  if(n == 0){
-    return 0;
-  }else if(n == 1){
-    return 1;
+fibonacci(int num){
+  if(num == 0 || num == 1){
+    return num;
   }else{
-    return fibonacci(n - 2) + fibonacci(n - 1);
+    return fibonacci(num - 2) + fibonacci(num - 1);
   }
 }
