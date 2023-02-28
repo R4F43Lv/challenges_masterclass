@@ -7,7 +7,7 @@
 // Implemente a sequencia fibonacci com funcões recursivamente usando o Dart.
 
 void main() {
-  for(int i = 0; i < 20; i++){
+  for(int i = 0; i < 10; i++){
     print(fibonacci(i));
   }
 }
