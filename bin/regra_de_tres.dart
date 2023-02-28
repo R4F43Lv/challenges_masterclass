@@ -15,33 +15,33 @@
 // "vazio".
 
 void main() {
-  double value1 = 10;
-  double value2 = 0;
-  double value3 = 0;
-  double value4 = 30;
+  double value1 = 6;
+  double value2 = 3;
+  double value3 = 5;
+  double value4 = 0;
 
-  int imptVaz = 0;
+  int imptVz = 0;
   double result = 0;
-  String? idtValueVaz;
+  String? idtValueVz;
   
   if (value1 == 0) {
-    imptVaz++;
-    idtValueVaz = "O valor 1 é: ";
+    imptVz++;
+    idtValueVz = "O valor 1 é: ";
   }
   if (value2 == 0) {
-    imptVaz++;
-    idtValueVaz = "O valor 2 é: ";
+    imptVz++;
+    idtValueVz = "O valor 2 é: ";
   }
   if (value3 == 0) {
-    imptVaz++;
-    idtValueVaz = "O valor 3 é: ";
+    imptVz++;
+    idtValueVz = "O valor 3 é: ";
   }
   if (value4 == 0) {
-    imptVaz++;
-    idtValueVaz = "O valor 4 é: ";
+    imptVz++;
+    idtValueVz = "O valor 4 é: ";
   }
 
-  if (imptVaz == 1) {
+  if (imptVz == 1) {
     if (value1 == 0) {
       result = (value4 * value2) / value3;
     } else if (value2 == 0) {
@@ -55,5 +55,5 @@ void main() {
     return print("ERRO! Apenas um valor deve ser ZERO");
   }
   
-  print("$idtValueVaz $result");
+  print("$idtValueVz ${result.toStringAsFixed(2)}");
 }
